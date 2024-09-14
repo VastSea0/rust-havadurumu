@@ -1,0 +1,9 @@
+[package]
+name = "asenkron"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["time", "rt", "rt-multi-thread", "macros"] }
+reqwest = { version = "0.12.7", features = ["json"] }
+serde = { version = "1.0.210", features = ["derive"] }
